@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <script>
+        // In object key must be string but in map key can be any data type bool,undefined,num....
+
+        let data = new Map([
+            ['name','anil'],
+            [true,'boolKey'],
+            [100,'hello'],
+            
+        ]);
+
+        data.set(undefined,'hmm');
+
+        // console.log(data);
+        // console.log(data.size);
+        // console.log(data.get(100));
+        // data.clear()
+        
+        // console.log(data.has(undefined));
+
+        // for(x of data){
+        //     console.log(x);
+        //     console.log(x[0]);
+        //     console.log(x[1]);
+
+        // }
+
+        data.forEach((val,key)=>{
+            console.log(val);
+            console.log(key);
+        
+        })
+
+
+
+
+
+    </script>
+</head>
+<body>
+    <h1>Map</h1>
+</body>
+</html>

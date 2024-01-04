@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+    <script>
+        let data ={
+            name:"anil",
+            age:34,
+            email:"falana@gmail.com",
+            getName: function(){
+                return this.name
+            }
+        }
+        data.contact=1222444;
+
+        delete data.name;
+
+        data.age=65;
+
+        // for(x in data) = 'in' in used in object ||| for(x of data) = 'of' is used in array.....
+        for(x in data){
+            console.log(x);
+        }
+
+
+        // console.log(data.getName());
+
+        console.log(Object.keys(data));
+        console.log(Object.values(data));
+        console.log(Object.entries  (data));
+
+
+
+    </script>
+
+</head>
+<body>
+    <h1>Object || hash table</h1>
+</body>
+</html>
